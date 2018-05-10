@@ -1,0 +1,8 @@
+{
+  "name": "Autofill",
+  "app_id": "45e39752",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
