@@ -1,13 +1,14 @@
-<h1>Start Typing ....</h1>
-
-<ion-item id="rounded">
-    <ion-input (keyup)="onkeyup($event)" class="input" placeholder="search movies..."></ion-input>
-</ion-item>
+<ion-content color="black">
 
 
+  <h1>Start Typing ....</h1>
 
-<h2>Results</h2>
 
-<span *ngFor="let movie of results | async">
-  <li>{{movie.title}}</li>
-</span>
+    <input [ngbTypeahead]="search1" (keyup)="onkeyup($event)" class="input" placeholder="search movies..."><br>
+  
+
+
+  <ion-card *ngIf="results!==undefined"  >
+    <ion-item  *ngFor="let movie of results | async" class="cards" tappable>{{movie.title}}</ion-item><br>
+  </ion-card>
+</ion-content>
