@@ -1,0 +1,13 @@
+<h1>Start Typing ....</h1>
+
+<ion-item id="rounded">
+    <ion-input (keyup)="onkeyup($event)" class="input" placeholder="search movies..."></ion-input>
+</ion-item>
+
+
+
+<h2>Results</h2>
+
+<span *ngFor="let movie of results | async">
+  <li>{{movie.title}}</li>
+</span>
