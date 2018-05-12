@@ -9,6 +9,8 @@
 
 
   <ion-card *ngIf="results!==undefined"  >
+    <ion-list no-lines>
     <ion-item  *ngFor="let movie of results | async" class="cards" tappable>{{movie.title}}</ion-item><br>
+      <ion-list>
   </ion-card>
 </ion-content>
