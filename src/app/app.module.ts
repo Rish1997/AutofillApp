@@ -14,12 +14,7 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const config = {
-    apiKey: "AIzaSyDk9r3p95i8dj4q1_5xDWLP958NmADtYas",
-    authDomain: "securitysystem-b76c6.firebaseapp.com",
-    databaseURL: "https://securitysystem-b76c6.firebaseio.com",
-    projectId: "securitysystem-b76c6",
-    storageBucket: "securitysystem-b76c6.appspot.com",
-    messagingSenderId: "771920021862"
+    
 }
 
 @NgModule({
