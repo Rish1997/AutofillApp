@@ -13,10 +13,6 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-const config = {
-    
-}
-
 @NgModule({
   declarations: [
     MyApp,
